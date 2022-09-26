@@ -1,3 +1,7 @@
+:root{
+    --couleur: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,56,121,1) 35%, rgba(0,212,255,1) 100%)
+}
+
 @font-face{
     font-family: "banner1";
     src: url("Police/Pixellettersfull-BnJ5.ttf");
@@ -6,7 +10,7 @@
 #banner1 {
     font-family: "banner1";
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,56,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: var(--couleur);
     color: red;
     text-align: center;
     border-radius: 20x;
