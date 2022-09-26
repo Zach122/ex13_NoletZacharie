@@ -1,0 +1,114 @@
+@font-face{
+    font-family: "banner1";
+    src: url("Police/Pixellettersfull-BnJ5.ttf");
+}
+
+#banner1 {
+    font-family: "banner1";
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,56,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: red;
+    text-align: center;
+    border-radius: 20x;
+}
+
+#banner2 {
+    font-family: 'Cairo Play', cursive;
+    text-align: center;
+    background: rgb(255,244,0);
+    background: linear-gradient(90deg, rgba(255,244,0,1) 0%, rgba(0,0,0,1) 26%, rgba(14,3,135,1) 40%, rgba(232,5,5,1) 50%, rgba(11,111,2,1) 63%, rgba(0,0,0,1) 75%, rgba(0,212,255,1) 100%);
+    border-radius: 100px;
+}
+
+@keyframes olla{
+
+        0% {
+        transform: rotate(360deg);
+        transition-timing-function: ease-in;
+        background-color:red;
+        }
+
+        50% {
+        transform:rotate(-180deg); 
+        transition-timing-function: ease-out;
+        background-color:blue;
+        }
+
+        75% {
+            transform:rotate(180deg); 
+            transition-timing-function: ease-out;
+            background-color:pink;;
+        }
+    }
+
+#banner1:hover {
+    animation-name: olla;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "lien1 lien2 lien3";
+    align-content: center;
+    background-color: black;
+    border-radius: 10px;
+}
+
+h1{
+    color: cadetblue;
+}
+
+#lien1{
+    grid-area: lien1;
+}
+
+#lien2{
+    grid-area: lien2;
+}
+
+#lien3{
+    grid-area: lien3;
+}
+
+#lien1:hover {
+    grid-area: lien1;
+    background-color:blue;
+    border-radius: 10px;
+    animation: bigger;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    }
+
+#lien2:hover {
+    grid-area: lien2;
+    background-color: blue;
+    border-radius: 10px;
+    animation: bigger;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+#lien3:hover {
+    grid-area: lien3;
+    background-color: blue;
+    border-radius: 10px;
+    animation: bigger;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes bigger {
+    0% {
+        background-color: blue;
+        transform: scale(1);
+    }
+    50% {
+        background-color: linear;
+        transform: scale(2);
+        background-color:rgb(0, 0, 21);
+    }
+}
